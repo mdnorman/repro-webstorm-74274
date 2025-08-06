@@ -1,0 +1,13 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "module": "es2022",
+    "moduleResolution": "node",
+    "baseUrl": "src",
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  }
+}

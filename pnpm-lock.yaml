@@ -1,0 +1,77 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      typescript:
+        specifier: ^5.0.0
+        version: 5.9.2
+
+  packages/api:
+    devDependencies:
+      '@my-org/my-project-core':
+        specifier: workspace:*
+        version: link:../core/src
+      '@tsconfig/node20':
+        specifier: 20.1.6
+        version: 20.1.6
+      '@types/node':
+        specifier: ^20.0.0
+        version: 20.19.9
+      typescript:
+        specifier: ^5.0.0
+        version: 5.9.2
+    publishDirectory: src
+
+  packages/core:
+    devDependencies:
+      '@tsconfig/node20':
+        specifier: 20.1.6
+        version: 20.1.6
+      '@types/node':
+        specifier: 22.17.0
+        version: 22.17.0
+      typescript:
+        specifier: ^5.0.0
+        version: 5.9.2
+    publishDirectory: src
+
+packages:
+
+  '@tsconfig/node20@20.1.6':
+    resolution: {integrity: sha512-sz+Hqx9zwZDpZIV871WSbUzSqNIsXzghZydypnfgzPKLltVJfkINfUeTct31n/tTSa9ZE1ZOfKdRre1uHHquYQ==}
+
+  '@types/node@20.19.9':
+    resolution: {integrity: sha512-cuVNgarYWZqxRJDQHEB58GEONhOK79QVR/qYx4S7kcUObQvUwvFnYxJuuHUKm2aieN9X3yZB4LZsuYNU1Qphsw==}
+
+  '@types/node@22.17.0':
+    resolution: {integrity: sha512-bbAKTCqX5aNVryi7qXVMi+OkB3w/OyblodicMbvE38blyAz7GxXf6XYhklokijuPwwVg9sDLKRxt0ZHXQwZVfQ==}
+
+  typescript@5.9.2:
+    resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+
+snapshots:
+
+  '@tsconfig/node20@20.1.6': {}
+
+  '@types/node@20.19.9':
+    dependencies:
+      undici-types: 6.21.0
+
+  '@types/node@22.17.0':
+    dependencies:
+      undici-types: 6.21.0
+
+  typescript@5.9.2: {}
+
+  undici-types@6.21.0: {}

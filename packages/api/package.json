@@ -1,0 +1,20 @@
+{
+  "name": "@my-org/my-project-api",
+  "version": "1.0.0",
+  "description": "API package for the project",
+  "type": "module",
+  "publishConfig": {
+    "directory": "src"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@my-org/my-project-core": "workspace:*",
+    "@tsconfig/node20": "20.1.6",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

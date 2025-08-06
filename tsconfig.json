@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@my-org/my-project-core": ["./packages/core/src"],
+      "@my-org/my-project-core/*": ["./packages/core/src/*"],
+      "@my-org/my-project-api": ["./packages/api/src"],
+      "@my-org/my-project-api/*": ["./packages/api/src/*"]
+    }
+  },
+  "references": [
+    {
+      "path": "./packages/core"
+    },
+    {
+      "path": "./packages/api"
+    }
+  ],
+  "files": [],
+  "include": []
+}
